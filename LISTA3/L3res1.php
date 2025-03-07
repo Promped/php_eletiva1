@@ -33,7 +33,7 @@
                         }
                     }
                          
-                    echo "<div class='alert alert-success'><strong>Resultado:</strong><br>";
+                    echo "<strong>Resultado:</strong>";
                     echo "O menor valor é " . number_format($menor_valor, 2, ',', '.') . "<br>";
                     echo "Ele está na posição " . $posicao . " da sequência inserida.</div>";
                 }

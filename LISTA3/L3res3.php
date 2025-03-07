@@ -29,12 +29,12 @@
                     {
                         $mensagem = "$a";    
                     }
-                    echo "<div class='alert alert-success'><strong>Veredito:</strong><br>";
+                    echo "<strong>Veredito:</strong>";
                     echo $mensagem; 
                 }
                 catch(Exception $e)
                 { 
-                    echo "<div class='alert alert-danger'>Erro: " . $e->getMessage() . "</div>";
+                    echo $e->getMessage();
                 }
             }
         ?>

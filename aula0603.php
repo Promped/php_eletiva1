@@ -5,7 +5,7 @@ declare (strict_types=1);// toda variavel tem que ter uma função ,tem que defi
 // se precisar converter float $numeros[] = floatval($_POST['num' . $i]);//conversão para float
 
 // repetição para criar os dois campos de entrada, se modificar o 2 para qualquer outro numero, indicara a qtd de repetição, e i=1 significa indice partindo do 1 e nao 0
-for ($i = 1; $i <= 2; $i++): ?>
+for ($i = 1; $i <= 2; $i++): 
 
 
 $numero = $_POST['n_mes']; 
@@ -16,7 +16,7 @@ $numero = $_POST['n_mes'];
 ?>
 
 <?php
-      function manipularString(string$palavra):void{
+      function manipularString(string$palavra):void{ //ver slaids
         echo "<p> a palavra possui ". strlen($palavra)."caracteres </p>";
         echo "<p> Letra A substituida por 4:",str_replace("a","4",$palavra)."</p>";
       }  

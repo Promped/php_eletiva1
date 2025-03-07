@@ -13,7 +13,7 @@
             {
                 try
                 {
-                    echo "<div class='alert alert-success'><strong>Solução:</strong><br>";
+                    echo "<strong>Solução:</strong>";
                     $num = $_POST["n"];
                     $fatorial = 1;
                     for ($i = 1; $i <= $num; $i++) 
@@ -26,7 +26,7 @@
                 }               
                 catch(Exception $e)
                 { 
-                    echo "<div class='alert alert-danger'>Erro: " . $e->getMessage() . "</div>";
+                    echo $e->getMessage();
                 }
                 }
         ?>

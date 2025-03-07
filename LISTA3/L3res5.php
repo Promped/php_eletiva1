@@ -33,12 +33,12 @@
                     }                  
                  
                     
-                    echo "<div class='alert alert-success'><strong>Mes correspondente:</strong><br>";
+                    echo "<strong>Mes correspondente:</strong>";
                     echo "mes de $nome_mes"; 
                 }
                 catch(Exception $e)
                 { 
-                    echo "<div class='alert alert-danger'>Erro: " . $e->getMessage() . "</div>";
+                    echo  $e->getMessage();
                 }
             }
         ?>

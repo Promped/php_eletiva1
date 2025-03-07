@@ -14,7 +14,7 @@
             $peso = $_POST["peso"];
             $altura = $_POST["altura"];
 
-            $imc = $peso / pow($altura, 2);
+            $imc = $peso / pow($altura, 2); //O comando pow() em PHP é utilizado para calcular a potência de um número.
 
             echo "Seu IMC é: " . $imc;  
 

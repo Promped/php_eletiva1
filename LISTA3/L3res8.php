@@ -16,7 +16,7 @@
                     $number = $_POST["n"];
                     if ($number > 0) 
                     {
-                        echo "<div class='alert alert-success'><strong>Solução:</strong><br>";
+                        echo "<strong>Solução:</strong>";
                         echo "A regressiva de $number até 1:";
                         $cont = $number;
                         do 
@@ -26,12 +26,12 @@
                         } while ($cont >= 1);
                     } else 
                     {
-                        echo "<h2>Insira um número maior que zero.</h2>";
+                        echo "<p>Insira um número maior que zero.</p>";
                     }
                 }               
                 catch(Exception $e)
                 { 
-                    echo "<div class='alert alert-danger'>Erro: " . $e->getMessage() . "</div>";
+                    echo $e->getMessage() ;
                 }
                 }
         ?>

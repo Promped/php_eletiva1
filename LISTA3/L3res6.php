@@ -15,7 +15,7 @@
                 {
                     $valor = $_POST['n'];     
                    
-                    echo "<div class='alert alert-success'><strong>Solução:</strong><br>";
+                    echo "<strong>Solução:</strong>";
                     echo "Números de 1 até $valor: ";
                     for ($i = 1; $i <= $valor; $i++) 
                     {
@@ -24,7 +24,7 @@
                 }
                 catch(Exception $e)
                 { 
-                    echo "<div class='alert alert-danger'>Erro: " . $e->getMessage() . "</div>";
+                    echo  $e->getMessage();
                 }
                 }
         ?>

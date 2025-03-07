@@ -19,7 +19,7 @@
                 <input type="number" id="n" name="n" class="form-control" required="" placeholder="insira numero">
             </div>
             <div class="mb-3 mt-4 col-2">
-                <button type="submit" class="btn btn-primary">Gerar</button>  
+                <button type="submit" class="btn btn-primary">Calcular </button>  
             </div>
         </div>
     

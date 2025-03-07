@@ -25,14 +25,14 @@
                     else 
                     {
                         $resultado = $soma;
-                        $mensagem = "A soma dos valores é ";
+                        $mensagem = "Ototal da soma  é ";
                     }
-                    echo "<div class='alert alert-success'><strong>Resultado:</strong><br>";
+                    echo "<strong>Resultado:</strong>";
                     echo $mensagem . number_format($resultado, 2, ',', '.') . ".</div>";
                 }
                 catch(Exception $e)
                 { 
-                    echo "<div class='alert alert-danger'>Erro: " . $e->getMessage() . "</div>";
+                    echo $e->getMessage() ;
                 }
             }
         ?>

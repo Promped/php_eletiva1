@@ -25,12 +25,12 @@
                         $corrigido = $valor;
                     }
                     
-                    echo "<div class='alert alert-success'><strong>Desconto de 15%:</strong><br>";
+                    echo "<strong>Desconto de 15%:</strong>";
                     echo "De $valor para $corrigido, desconto de $desconto reais"; 
                 }
                 catch(Exception $e)
                 { 
-                    echo "<div class='alert alert-danger'>Erro: " . $e->getMessage() . "</div>";
+                    echo $e->getMessage();
                 }
             }
         ?>

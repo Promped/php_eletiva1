@@ -13,16 +13,16 @@
         <form method="post" action="L2resposta3.php">
                            
             <div class="mb-3">
-                <label for="valor1" class="form-label">Insira o primeiro valor: </label>
+                <label for="valor1" class="form-label">Digite o primeiro valor: </label>
                 <input type="text" id="valor1" name="valor1" class="form-control" required="">
             </div>
         
             <div class="mb-3">
-                <label for="valor2" class="form-label">Insira o segundo valor: </label>
+                <label for="valor2" class="form-label">Digite o segundo valor: </label>
                 <input type="text" id="valor2" name="valor2" class="form-control" required="">
             </div>
         
-            <button type="submit" class="btn btn-primary">Enviar</button>
+            <button type="submit" class="btn btn-primary">Converter</button>
         </form>
 
 

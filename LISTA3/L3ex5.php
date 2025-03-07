@@ -13,7 +13,7 @@
     <form method="post" class="mb-3" action="L3res5.php">   
         <div class="row">        
             <div class="mb-3 mt-4 col-4">
-                <label for="n_mes" class="form-label">Digite uma valor correspondente a um mes: </label>
+                <label for="n_mes" class="form-label">Digite um número correspondente a um mes: </label>
             </div>
             <div class="mb-3 mt-4 col-2">
                 <input type="number" id="n_mes" name="n_mes" class="form-control" required="" placeholder="(1 - 12)">

@@ -12,7 +12,7 @@
         if ($_SERVER['REQUEST_METHOD'] == 'POST') { 
             try {
             $celsius = $_POST["celsius"];
-            $fahrenheit = ($celsius * 9/5) + 32;
+            $fahrenheit = ($celsius * 9/5) + 32;//calculo
             echo "O valor da temperatura em fahrenheit é: $fahrenheit";
 
         } catch (Exception $e) {

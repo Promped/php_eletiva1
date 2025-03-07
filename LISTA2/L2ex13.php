@@ -12,7 +12,7 @@
         <form method="post" action="L2resposta13.php">
                            
             <div class="mb-3">
-                <label for="metros" class="form-label">Insira o valor em metros: </label>
+                <label for="metros" class="form-label">Digite o valor em metros: </label>
                 <input type="text" id="metros" name="metros" class="form-control" required="">
             </div>
         
