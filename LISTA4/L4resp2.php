@@ -8,7 +8,7 @@
   </head>
 
   <body class="container mt-4">
-    <h1>Resposta exercicio 1 </h1>
+    <h1>Resposta exercicio 2 </h1>
     <?php
 
 if($_SERVER['REQUEST_METHOD']=='POST') 
@@ -16,6 +16,8 @@ if($_SERVER['REQUEST_METHOD']=='POST')
     {
       function manipularString(string$palavra):void{
         echo "<p> a palavra possui ". strlen($palavra)."caracteres </p>";
+        echo "<p><strong>Maiúsculas:</strong> " . strtoupper($palavra) . "</p>";
+        echo "<p><strong>Minúsculas:</strong> " . strtolower($palavra) . "</p>";    
         
       }  
     

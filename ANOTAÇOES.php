@@ -17,7 +17,7 @@ for ($i = 1; $i <= 2; $i++);
   $nome_mes= "";      
 
 
-
+  echo "<p> Letra A substituida por 4:",str_replace("a","4",$palavra)."</p>";
 
 //php -S localhost:8000
 
