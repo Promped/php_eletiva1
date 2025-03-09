@@ -9,27 +9,19 @@
   </head>
 
     <body>
-        <h1>Exercício 4</h1>
-        <form method="post" action="L4resp4.php">
+        <h1>Exercício 5</h1>
+        <form method="post" action="L4resp5.php">
                            
             <div class="mb-3">
-                <label for="dia" class="form-label">Insira um dia: </label>
-                <input type="number" id="dia" name="dia" class="form-control" required="">
+                <label for="valor" class="form-label">Insira um valor: </label>
+                <input type="number" id="valor" name="valor" class="form-control" required="">
             </div>
 
-            <div class="mb-3">
-                <label for="mes" class="form-label">Um mes: </label>
-                <input type="number" id="mes" name="mes" class="form-control" required="">
-            </div>
-
-            <div class="mb-3">
-                <label for="ano" class="form-label">E um ano: </label>
-                <input type="number" id="ano" name="ano" class="form-control" required="">
-            </div>
+      
         
            
         
-            <button type="submit" class="btn btn-primary">Verificar </button>
+            <button type="submit" class="btn btn-primary">Calcular </button>
         </form>
 
 
