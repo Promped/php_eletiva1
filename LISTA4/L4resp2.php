@@ -11,23 +11,25 @@
     <h1>Resposta exercicio 2 </h1>
     <?php
 
-if($_SERVER['REQUEST_METHOD']=='POST') 
-    try
-    {
-      function manipularString(string$palavra):void{
-        echo "<p> a palavra possui ". strlen($palavra)."caracteres </p>";
-        echo "<p><strong>Maiúsculas:</strong> " . strtoupper($palavra) . "</p>";
-        echo "<p><strong>Minúsculas:</strong> " . strtolower($palavra) . "</p>";    
-        
-      }  
-    
+    echo "<p>A palavra possui " . strlen($palavra) . " caracteres.</p>";
+    echo "<p><strong>Maiúsculas:</strong> " . strtoupper($palavra) . "</p>";
+    echo "<p><strong>Minúsculas:</strong> " . strtolower($palavra) . "</p>";
+
+if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+    try {
+        $palavra = trim($_POST["palavra"]); 
+
+        if (!empty($palavra)) {
+            manipularString($palavra);
+        } else {
+            throw new Exception("Insira uma palavra válida.");
+        }
+    } catch (Exception $e) {
+        echo "<p <strong> " . $e->getMessage() . "</strong></p>";
     }
-    catch(Exception $e)
-    { 
-        echo $e->getMessage();
-    }
-    
+}
 ?>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

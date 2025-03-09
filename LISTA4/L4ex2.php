@@ -13,13 +13,13 @@
         <form method="post" action="L4resp2.php">
                            
             <div class="mb-3">
-                <label for="palavra" class="form-label">Insira uma palavra: </label>
+                <label for="palavra" class="form-label">Digite uma palavra: </label>
                 <input type="text" id="palavra" name="palavra" class="form-control" required="">
             </div>
         
            
         
-            <button type="submit" class="btn btn-primary">Contar caracteres</button>
+            <button type="submit" class="btn btn-primary">Contar</button>
         </form>
 
 
