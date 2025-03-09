@@ -8,27 +8,20 @@
   </head>
 
   <body class="container mt-4">
-    <h1>Resposta exercicio 5 </h1>
+    <h1>Resposta exercicio 6 </h1>
     <?php
 
 if($_SERVER['REQUEST_METHOD']=='POST') 
     try {
-
-       
-        $numero = (float)$numero;
-
-         // Verifica se a entrada é numérica
-         if (!is_numeric($numero)) {
+        if (!is_numeric($numero)) {
             throw new Exception("Por favor, insira um número válido.");
         }
+        $numero = (float)$numero;
 
-        if ($numero < 0) {
-            throw new Exception("Números negativo não possuem raiz quadrada.");
-        }
+        // Arredonda o número
+        $arredondar = round($numero);
 
-        $raiz = ($numero ** 0.5);
-
-        echo "<p <strong>A raiz quadrada de {$numero} é " . number_format($raiz, 2) . ".</strong></p>";
+        echo "<p <strong>O número {$numero} arredondado é {$arredondar}.</strong></p>";
 
     } catch (Exception $e) {
         echo "<p <strong>" . $e->getMessage() . "</strong></p>";
