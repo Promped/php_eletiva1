@@ -19,6 +19,17 @@ for ($i = 1; $i <= 2; $i++);
 
   echo "<p> Letra A substituida por 4:",str_replace("a","4",$palavra)."</p>";
 
+
+  // Captura e remove espaços extras
+  $dia = trim($_POST['dia']);
+
 //php -S localhost:8000
+
+
+
+            // Verifica se a data é válida
+            if (!checkdate($mes, $dia, $ano)) {
+                throw new Exception("Data inválida.");
+            }
 
 ?>

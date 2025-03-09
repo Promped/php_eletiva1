@@ -10,7 +10,7 @@
     <h1>Boa noite! hoje é 
 
         <?php
-            echo date("d/m/Y");  // echo é usado para exibir as onformações para o user 
+            echo date("d/m/Y");  // echo é usado para exibir as informações para o user 
         
         ?>
     </h1>
