@@ -32,4 +32,50 @@ for ($i = 1; $i <= 2; $i++);
                 throw new Exception("Data inválida.");
             }
 
+
+
+
+
+
+//SESSION
+<body>
+<? php 
+    session_start();
+ $_SESSION['usuario'] = "João";   //arreipre definido do servidor $_SESSION
 ?>
+<h1> Bem vindo <?= $_SESSION['usuario']</h1>
+
+
+
+ //recuperando a sessão 
+
+<body>
+ <?php
+  session_start();
+<h1> Seja bem vindo novamente <?= $_SESSION['usuario']</h1>
+ 
+
+
+ session_start();
+session_destroy();
+unset($_SESSION['usuario']); // apagar uma sessao especifica
+
+//sempre é necessario usar o start_session mesmo que for para apagar tudo 
+
+
+// COOKIE
+<body>
+<?php
+  session_start();
+ $_SESSION['usuario'] = "João";
+  setcookie('usuario','João', time() + 3600); //tem que definir o tempo
+?>
+
+<h1> Bem vindo <?= $_SESSION['usuario'] = "João"; </h1>;
+ <h2> Bem vindo <?= $_COOKIE['usuario'] ?></h2>
+
+
+
+
+
+
