@@ -3,13 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista 5</title>
+    <title>Lista 5 - Exercício 4</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-</head>
-<body class="container mt-4">
-<h1>Exercício 4</h1>
-<form method="post" action="L5resp4.php">
-    <title>Itens com Imposto</title>
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -31,12 +26,12 @@
 
         label {
             display: inline-block;
-            width: 100px;
+            width: 120px;
         }
 
         input {
             padding: 5px;
-            width: 200px;
+            width: 250px;
             border: 1px solid #ddd;
             border-radius: 4px;
         }
@@ -53,44 +48,24 @@
         button:hover {
             background: #0056b3;
         }
-
-        .resultado {
-            margin-top: 20px;
-        }
-
-        table {
-            width: 100%;
-            border-collapse: collapse;
-            margin-top: 10px;
-        }
-
-        th, td {
-            padding: 8px;
-            border: 1px solid #ddd;
-            text-align: left;
-        }
-
-        th {
-            background: #f8f9fa;
-        }
-
-        .error {
-            color: red;
-            font-size: 0.9em;
-        }
     </style>
 </head>
-<body>
+
+<body class="container mt-4">
+    <h1 class="text-center">Cadastro de Itens</h1>
+
     <div class="form-container">
-        <h2>Cadastro de Itens</h2>
-        <form method="POST" action="">
-            <?php for ($i = 1; $i <= 5; $i++): ?>
-            <div class="input-group">
-                <label>Item <?php echo $i; ?>:</label>
-                <input type="text" name="nome[]" placeholder="Nome" required>
-                <input type="number" name="preco[]" placeholder="Preço" step="0.01" min="0" required>
-            </div>
+        <h2>Informe os Itens</h2>
+        <form method="POST" action="L5resp4.php">
+            <?php for ($i = 0; $i < 5; $i++): ?>
+                <div class="input-group">
+                    <label>Item <?php echo $i + 1; ?>:</label>
+                    <input type="text" name="nome[]" placeholder="Nome do Item" required>
+                    <input type="number" name="preco[]" placeholder="Preço (R$)" step="0.01" min="0" required>
+                </div>
             <?php endfor; ?>
-            <button type="submit">Calcular </button>
+            <button type="submit">Calcular</button>
         </form>
     </div>
+</body>
+</html>
