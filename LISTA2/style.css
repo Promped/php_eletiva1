@@ -1,1 +1,53 @@
+/* Estilos gerais (aplicados a ambas as páginas) */
+body {
+    font-family: 'Times New Roman', sans-serif;
+    background-color: #f8f9fa;
+    padding: 20px;
+}
 
+h1 {
+    color: #0d6efd;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilos específicos para o formulário (exercicio2.html) */
+form {
+    margin-top: 20px;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #495057;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Estilos para a página de resposta (L2resposta2.php) */
+.resultado {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #e9f7ef;
+    border-radius: 5px;
+    color: #28a745;
+}
+
+.erro {
+    color: #dc3545;
+    background-color: #f8d7da;
+}
