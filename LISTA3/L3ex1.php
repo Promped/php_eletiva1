@@ -10,22 +10,22 @@
     <h1>Exercicio 1</h1>
    
 
-    <form method="post" class="mb-3" action="L3res1.php">
-        <div class="row">
-        
-            <?php 
-            
-                for ($i = 1; $i <= 7; $i++): ?>
-            
-                <div class="mb-3 col-1">
-                    <label for="num<?= $i ?>" class="form-label">N°Pos <?= $i ?>:</label>
-                    <input type="number" name="num<?= $i ?>" class="form-control" >
-                </div>
-                
-            <?php endfor; ?>
-        </div>
+    <form method="post" class="mb-3" action="./LISTA3/L3res1.php">
+      <div class="row">
+      
+        <?php 
+          
+          for ($i = 1; $i <= 7; $i++): ?>
+          
+            <div class="mb-3 col-1">
+              <label for="num<?= $i ?>" class="form-label">N°Pos <?= $i ?>:</label>
+              <input type="number" name="num<?= $i ?>" class="form-control" >
+            </div>
+              
+        <?php endfor; ?>
+      </div>
 
-        <button type="submit" class="btn btn-primary">Ler</button>
+      <button type="submit" class="btn btn-primary">Ler</button>
 
     </form>
 

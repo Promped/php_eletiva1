@@ -9,7 +9,7 @@
   <body class="container mt-4 mb-3">
     <h1 class=" mt-4 mb-3">Exercicio 2 </h1>
    
-    <form method="post" class="mb-3" action="L32res2.php">
+    <form method="post" class="mb-3" action="L3res2.php">
     <?php 
         for ($i = 1; $i <= 2; $i++): ?>
         <div class="row mt-4">
